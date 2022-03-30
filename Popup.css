@@ -1,0 +1,22 @@
+.popup-container {
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.success {
+  background-color: rgb(46, 125, 50);
+}
+
+.failure {
+  background-color: rgb(211, 47, 47);
+}
