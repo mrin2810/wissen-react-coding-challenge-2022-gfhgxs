@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { render } from 'react-dom';
+import Popup from './Popup';
+import Hello from './Hello';
 import './style.css';
 
 const EyeHideSVG = () => (
