@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import Popup from './Popup';
 import Hello from './Hello';
 import './style.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router/lib/components';
 
 const EyeHideSVG = () => (
   <svg
@@ -196,4 +198,9 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById('root'));
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
