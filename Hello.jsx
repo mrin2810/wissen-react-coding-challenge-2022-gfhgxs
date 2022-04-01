@@ -28,26 +28,25 @@ export default ({ name }) => {
   return (
     <React.Fragment>
       <h1>Hello {name}!! </h1>
-      {userData.length && (
-        <table border={1} cellPadding={3} cellSpacing={0}>
-          <tr>
-            <th>Name</th>
-            <th>Year</th>
-          </tr>
-          {userData.map((user, index) => {
+      <table border={1} cellPadding={3} cellSpacing={0}>
+        <tr>
+          <th>Name</th>
+          <th>Year</th>
+        </tr>
+        {userData.length !== 0 &&
+          userData.map((user, index) => {
             return (
               <tr key={index}>
-                <td style={{ color: user.color, fontWeight: bold }}>
+                <td style={{ color: user.color, fontWeight: 'bold' }}>
                   {user.name}
                 </td>
-                <td style={{ color: user.color, fontWeight: bold }}>
+                <td style={{ color: user.color, fontWeight: 'bold' }}>
                   {user.year}
                 </td>
               </tr>
             );
           })}
-        </table>
-      )}
+      </table>
     </React.Fragment>
   );
 };
